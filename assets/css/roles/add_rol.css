@@ -1,0 +1,14 @@
+/* .center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.add-margin {
+    margin-right: 20px
+}
+
+.right {
+    display: flex;
+    align-items: right;
+}
