@@ -38,8 +38,6 @@ class Auth extends CI_Controller {
 				'login' => TRUE
 			);
 
-			// var_dump($data);
-
 			$this->session->set_userdata($data);
 			redirect(base_url()."welcome");
 		}

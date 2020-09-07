@@ -17,7 +17,14 @@ $route['edit_empleado/(:num)'] = "persons/edit_employe/$1";
 $route['clientes'] = "persons/client";
 $route['nuevo_cliente'] = "persons/new_client";
 
+$route['servicios'] = "services";
+$route['nuevo_servicio'] = "services/new_service";
+$route['guardar_servicio'] = "services/save_services";
 
+$route['planes'] = "planes";
+$route['nuevo_plan'] = "planes/new_plan";
+$route['editar_plan/(:num)'] = "planes/new_plan/$1";
+$route['eliminar_plan/(:num)'] = "planes/delete_plan/$1";
 
 
 $route['404_override'] = '';

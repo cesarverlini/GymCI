@@ -1,0 +1,13 @@
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label.error {
+    float: none;
+    color: red;
+    padding-left: .5em;
+    vertical-align: middle;
+    font-size: 15px;
+}

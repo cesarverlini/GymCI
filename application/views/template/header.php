@@ -51,7 +51,7 @@
           <!-- user-panel -->
           <div class="image">
             <?php if ($this->session->userdata('Foto')) : ?>
-              <img style="width: 30px; margin-right: 10px;" src="assets/img/<?php echo $this->session->userdata('Foto') ?>" style="width: 40px; height: 40;" class="img-circle elevation-2" alt="User Image">
+              <img style="width: 30px; margin-right: 10px;" src="<?php echo base_url('assets/img/' . $this->session->userdata('Foto')) ?>" style="width: 40px; height: 40;" class="img-circle elevation-2" alt="User Image">
             <?php else : ?>
               <img style="width: 30px; margin-right: 10px;" src="<?php echo base_url('assets/template/'); ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             <?php endif; ?>
@@ -79,7 +79,7 @@
             <!-- Termina link -->
             <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
+                <i class="nav-icon fas fa-cube"></i>
                 <p>
                   Administración
                   <i class="fas fa-angle-left right"></i>
@@ -89,7 +89,7 @@
               <ul class="nav nav-treeview">
                 <li class="nav-item has-treeview" style="padding-left: 10px;">
                   <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-cubes"></i>
+                    <i class="nav-icon fas fa-users"></i>
                     <p>
                       Usuarios
                       <i class="fas fa-angle-left right"></i>
@@ -172,13 +172,13 @@
               </a>
               <ul class="nav nav-treeview" style="padding-left: 10px;">
                 <li class="nav-item">
-                  <a href="<?php echo base_url('ventas'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('servicios'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Todos los servicios</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo base_url('historial_ventas'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('nuevo_servicio'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Agregar Servicios</p>
                   </a>
@@ -197,13 +197,13 @@
               </a>
               <ul class="nav nav-treeview" style="padding-left: 10px;">
                 <li class="nav-item">
-                  <a href="<?php echo base_url('ventas'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('planes'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Todos los planes</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo base_url('historial_ventas'); ?>" class="nav-link">
+                  <a href="<?php echo base_url('nuevo_plan'); ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Agregar planes</p>
                   </a>
